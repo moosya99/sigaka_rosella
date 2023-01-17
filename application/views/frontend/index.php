@@ -210,26 +210,26 @@
 
 					<div class="mySlides fade" style="width: 100%">
 						<div class="numbertext" style="background-color: rgba(0, 0, 0, 0.7)">7 / 10</div>
-						<img src="<?= base_url() ?>assets/frontend/images/sigaka/sk.jpeg" style="width: 100%; height: 650px; margin: 0 auto">
-						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>SK Ponsel</b>, Jalan Duyung, Kecamatan Marpoyan Damai</div>
+						<img src="<?= base_url() ?>assets/frontend/images/sigaka/gb-6.jpg" style="width: 100%; height: 650px; margin: 0 auto">
+						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Rutinitas Jum'at Pagi</b>, PK Rosella Baru</div>
 					</div>
 
 					<div class="mySlides fade" style="width: 100%">
 						<div class="numbertext" style="background-color: rgba(0, 0, 0, 0.7)">8 / 10</div>
-						<img src="<?= base_url() ?>assets/frontend/images/sigaka/syafian.jpeg" style="width: 100%; height: 650px; margin: 0 auto">
-						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Syafian Ponsel</b>, Jalan Suka Karya Ujung, Tarai Bangun</div>
+						<img src="<?= base_url() ?>assets/frontend/images/sigaka/gb-7.jpg" style="width: 100%; height: 650px; margin: 0 auto">
+						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Peduli Bencana Alam #PeduliSemeru</b>, PK Rosella Baru</div>
 					</div>
 
 					<div class="mySlides fade" style="width: 100%">
 						<div class="numbertext" style="background-color: rgba(0, 0, 0, 0.7)">9 / 10</div>
-						<img src="<?= base_url() ?>assets/frontend/images/sigaka/syafitra.jpeg" style="width: 100%; height: 650px; margin: 0 auto">
-						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Syafitra Ponsel</b>, Jalan Suka Karya, Kecamatan Tampan</div>
+						<img src="<?= base_url() ?>assets/frontend/images/sigaka/gb-8.jpg" style="width: 100%; height: 650px; margin: 0 auto">
+						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Silahturahmi</b>, PK Rosella Baru</div>
 					</div>
 
 					<div class="mySlides fade" style="width: 100%">
 						<div class="numbertext" style="background-color: rgba(0, 0, 0, 0.7)">10 / 10</div>
-						<img src="<?= base_url() ?>assets/frontend/images/sigaka/syahdan.jpeg" style="width: 100%; height: 650px; margin: 0 auto">
-						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Syahdan Ponsel</b>, Jalan Duyung, Kecamatan Marpoyan Damai</div>
+						<img src="<?= base_url() ?>assets/frontend/images/sigaka/gb-9.jpg" style="width: 100%; height: 650px; margin: 0 auto">
+						<div class="text" style="background-color: rgba(0, 0, 0, 0.7)"><b>Keamanan</b>, PK Rosella Baru</div>
 					</div>
 
 					<!-- Next and previous buttons -->
