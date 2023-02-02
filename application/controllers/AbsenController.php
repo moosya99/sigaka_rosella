@@ -52,13 +52,13 @@ class AbsenController extends CI_Controller
 				$tglgabung = $tgl[2];
 
 				$karyawanId = $nama;
-				$gajiTotal = $karyawan['jabatan_gaji'];
+				$gajiTotal = $karyawan['bagian_gaji'];
 				$bulan = $gaji['gaji_bulan_ke'];
 
 				if ($gaji == null) {
 					$generate = substr(time(), 5);
 					$gajiId = 'GJI-' . $generate;
-					$gajiTotal = $karyawan['jabatan_gaji'];
+					$gajiTotal = $karyawan['bagian_gaji'];
 
 					$dataGaji = array(
 						'gaji_id' => $gajiId,
@@ -72,7 +72,7 @@ class AbsenController extends CI_Controller
 					if (date('d') == $tglgabung) {
 						$generate = substr(time(), 5);
 						$gajiId = 'GJI-' . $generate;
-						$gajiTotal = $karyawan['jabatan_gaji'];
+						$gajiTotal = $karyawan['bagian_gaji'];
 						$bulan = $bulan + 1;
 
 						$dataGaji = array(
@@ -121,7 +121,7 @@ class AbsenController extends CI_Controller
 			$gaji = $this->GajiModel->lihat_satu_gaji($cekAbsen['karyawan_id']);
 			$gajiId = $gaji['gaji_id'];
 			$gajiLembur = $gaji['gaji_lembur'];
-			$gajiLembur = $gajiLembur + $gaji['jabatan_gaji'];
+			$gajiLembur = $gajiLembur + $gaji['bagian_gaji'];
 			$dataGaji = array(
 				'gaji_lembur' => $gajiLembur
 			);

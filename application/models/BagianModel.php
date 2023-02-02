@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class bagianModel extends CI_Model
+class BagianModel extends CI_Model
 {
 	public function __construct()
 	{

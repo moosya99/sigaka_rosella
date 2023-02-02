@@ -10,12 +10,12 @@ $(document).ready(function () {
 	$('#feedback').delay(3000).fadeOut('slow');
 
 	// ------------------------------------------------------------------------------------------
-	// jabatan
+	// bagian
 	// ------------------------------------------------------------------------------------------
 
 	$('.gaji-edit').click(function () {
 		var id = $(this).val();
-		var getUrl = root + 'jabatan/updateForm/' + id;
+		var getUrl = root + 'bagian/updateForm/' + id;
 		var html = '';
 		$.ajax({
 			url : getUrl,
@@ -27,12 +27,12 @@ $(document).ready(function () {
 					html += '' +
 						'<input type="hidden" value="'+id+'" name="id">' +
 						'<fieldset class="form-group floating-label-form-group">' +
-						'<label for="jabatan">Jabatan</label>' +
-						'<input type="text" class="form-control" name="jabatan" id="jabatan" value="'+response.jabatan_nama+'" placeholder="Jabatan" autocomplete="off" required>' +
+						'<label for="bagian">bagian</label>' +
+						'<input type="text" class="form-control" name="bagian" id="bagian" value="'+response.bagian_nama+'" placeholder="bagian" autocomplete="off" required>' +
 						'</fieldset>' +
 						'<fieldset class="form-group floating-label-form-group">' +
 						'<label for="gaji">Gaji</label>' +
-						'<input type="text" class="form-control" name="gaji" id="gaji" value="'+response.jabatan_gaji+'" placeholder="Jumlah gaji" autocomplete="off" required>' +
+						'<input type="text" class="form-control" name="gaji" id="gaji" value="'+response.bagian_gaji+'" placeholder="Jumlah gaji" autocomplete="off" required>' +
 						'</fieldset>';
 
 					console.log(html);
@@ -50,7 +50,7 @@ $(document).ready(function () {
 	$('.gaji-hapus').click(function () {
 		var id = $(this).val();
 		var html = '' +
-			'<a href="'+root+'jabatan/hapus/'+id+'" class="btn btn-danger btn-bg-gradient-x-red-pink">Hapus</a>';
+			'<a href="'+root+'bagian/hapus/'+id+'" class="btn btn-danger btn-bg-gradient-x-red-pink">Hapus</a>';
 		$('#hapusgaji').html(html);
 	});
 
@@ -75,8 +75,8 @@ $(document).ready(function () {
 					$('#lihat_nohp').val(response.karyawan_nomor_hp);
 					$('#lihat_norek').val(response.karyawan_no_rekening);
 					$('#lihat_tg').val(response.karyawan_tanggal_gabung);
-					$('#lihat_jabatan_karyawan').val(response.jabatan_nama);
-					$('#lihat_gaji_pokok').val(formatRupiah(response.jabatan_gaji,'Rp. '));
+					$('#lihat_bagian_karyawan').val(response.bagian_nama);
+					$('#lihat_gaji_pokok').val(formatRupiah(response.bagian_gaji,'Rp. '));
 					console.log(response);
 				}
 			},
@@ -106,7 +106,7 @@ $(document).ready(function () {
 					$('#edit_nohp').val(response.karyawan_nomor_hp);
 					$('#edit_norek').val(response.karyawan_no_rekening);
 					$('#edit_tg').val(response.karyawan_tanggal_gabung);
-					$('#edit_jabatan_karyawan').val(response.gaji_jabatan);
+					$('#edit_bagian_karyawan').val(response.gaji_bagian);
 					$('#edit_gaji_pokok').val(formatRupiah(response.gaji_jumlah,'Rp. '));
 					console.log(response);
 				}
@@ -189,7 +189,7 @@ $(document).ready(function () {
 			success: function (response) {
 				if (response != null){
 					$('#gaji_lihat_nama').val(response.karyawan_nama);
-					$('#gaji_lihat_jabatan').val(response.jabatan_nama);
+					$('#gaji_lihat_bagian').val(response.bagian_nama);
 					$('#gaji_lihat_tg').val(response.karyawan_tanggal_gabung);
 					$('#gaji_lihat_lembur').val(formatRupiah(response.gaji_lembur,'Rp. '));
 					$('#gaji_lihat_gaji').val(formatRupiah(response.gaji_total,'Rp. '));
@@ -220,7 +220,7 @@ $(document).ready(function () {
 			success: function (response) {
 				if (response != null){
 					$('.slip-nama').html(response.karyawan_nama);
-					$('#slip-jabatan').html(response.jabatan_nama);
+					$('#slip-bagian').html(response.bagian_nama);
 					$('#slip-nohp').html(response.karyawan_nomor_hp);
 					$('#slip-lembur').html(formatRupiah(response.gaji_lembur));
 					$('#slip-gaji').html(formatRupiah(response.gaji_total));
@@ -321,7 +321,7 @@ $(document).ready(function () {
 						'<tr>' +
 						'<th>No</th>' +
 						'<th>Nama Karyawan</th>' +
-						'<th>Jabatan</th>' +
+						'<th>bagian</th>' +
 						'<th>Tanggal</th>' +
 						'<th>Gaji</th>' +
 						'<th>Pinjaman</th>' +
@@ -338,7 +338,7 @@ $(document).ready(function () {
 							'<tr>' +
 							'<td>'+no+'</td>' +
 							'<td>'+response[i].karyawan_nama+'</td>' +
-							'<td>'+response[i].jabatan_nama+'</td>' +
+							'<td>'+response[i].bagian_nama+'</td>' +
 							'<td>'+date_indo(response[i].gaji_tanggal)+'</td>' +
 							'<td style="text-align: right"> Rp. '+formatRupiah((parseInt(response[i].gaji_lembur) + parseInt(response[i].gaji_total)).toString())+'</td>' +
 							'<td style="text-align: right"> Rp. '+formatRupiah((parseInt(response[i].gaji_bayar_pinjaman)).toString())+'</td>' +

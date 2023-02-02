@@ -40,7 +40,7 @@
 						<tr>
 							<td style="width: 2%">No</td>
 							<td>Nama Karyawan</td>
-							<th>bagian</th>
+							<th>Bagian</th>
 							<th>Tanggal Bergabung</th>
 							<th>Nomor HP</th>
 							<td style="text-align: center"><i class="ft-settings spinner"></i></td>

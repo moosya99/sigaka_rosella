@@ -117,7 +117,7 @@
 						<li class="<?php if ($this->uri->segment(1) == 'karyawan') echo 'active' ?>"><a class="menu-item" href="<?= base_url('karyawan') ?>"><i class="ft-users"> </i> Data
 								Karyawan</a>
 						</li>
-						<li class="<?php if ($this->uri->segment(1) == 'jabatan') echo 'active' ?>"><a class="menu-item" href="<?= base_url('jabatan') ?>"><i class="ft-award"></i> Data Jabatan</a>
+						<li class="<?php if ($this->uri->segment(1) == 'bagian') echo 'active' ?>"><a class="menu-item" href="<?= base_url('bagian') ?>"><i class="ft-award"></i> Data bagian</a>
 						</li>
 					</ul>
 				</li>

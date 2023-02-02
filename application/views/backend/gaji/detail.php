@@ -40,7 +40,7 @@
 						<tr>
 							<td style="width: 2%">No</td>
 							<td>Nama Karyawan</td>
-							<td>bagian</td>
+							<td>Bagian</td>
 							<td>Gaji Bulan Ini</td>
 							<td>Bulan ke</td>
 							<td>Status Bayar</td>
@@ -120,7 +120,7 @@
 					<input type="text" class="form-control" name="nama" id="gaji_lihat_nama" placeholder="Nama Karyawan" autocomplete="off" readonly>
 				</fieldset>
 				<fieldset class="form-group floating-label-form-group">
-					<label for="gaji_lihat_bagian">bagian</label>
+					<label for="gaji_lihat_bagian">Bagian</label>
 					<input type="text" class="form-control" name="tempat_lahir" id="gaji_lihat_bagian" value="" placeholder="Tempat Lahir" autocomplete="off" readonly>
 				</fieldset>
 				<fieldset class="form-group floating-label-form-group">
@@ -215,10 +215,12 @@
 							<div class="tengah">
 								<h3><b>PK Rosella Baru</b></h3>
 							</div>
-							<div class="tengah">Lolawang, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur</div>
-							<hr>
-							<div class="tengah"><b><u>SLIP GAJI KARYAWAN</u></b></div>
-							<br>
+							<div class="tengah">Industri Persada Blok S No.6</div>
+							<td>
+								<div class="tengah">Jarang Sari, Lolawang, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur</div>
+								<hr>
+								<div class="tengah"><b><u>SLIP GAJI KARYAWAN</u></b></div>
+								<br>
 						</div>
 					</div>
 					<div class="row">
@@ -230,7 +232,7 @@
 									<td><span class="slip-nama"></span></td>
 								</tr>
 								<tr>
-									<td>bagian</td>
+									<td>Bagian</td>
 									<td>:</td>
 									<td><span id="slip-bagian"></span></td>
 								</tr>
@@ -325,12 +327,12 @@
 							<p><b><u><span class="slip-nama"></span></u></b></p>
 						</div>
 						<div class="col-6 text-center">
-							<p>Pati, <?= date_indo(date('Y-m-d')) ?></p>
+							<p>Kab. Mojokerto, <?= date_indo(date('Y-m-d')) ?></p>
 							<p>Manajer</p>
 							<br>
 							<br>
 							<br>
-							<p><b><u>Nur Wahyuda</u></b></p>
+							<p><b><u>Mochamat Syahri</u></b></p>
 						</div>
 					</div>
 				</div>

@@ -106,9 +106,8 @@
 		<div class="home-content">
 
 			<div class="row home-content__main">
-				<p>
-				<img src="<?= base_url() ?>assets/frontend/images/sigaka/logo2.PNG" style="width: 50%; height: 350px; margin: 0 auto"> <br>
-				</p>
+				<img src=" <?= base_url() ?>assets/frontend/images/sigaka/logo2.PNG" align= "top" style="width: 50%; height: 350px; margin: 0 auto"> <br>
+		
 
 				<h1>
 					PK Rosella Baru. <br>

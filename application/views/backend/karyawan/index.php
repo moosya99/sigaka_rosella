@@ -38,6 +38,14 @@
 						<i class="ft-plus-circle"></i> Tambah data karyawan
 					</button>
 				<?php endif; ?>
+				<div class="col card-header text-right">
+				<?php if ($this->session->userdata('session_hak_akses') == 'manajer') : ?>
+					<button type="button" class="btn btn-primary btn-bg-gradient-x-yellow-blue box-shadow-1" data-toggle="modal" data-target="#bootstrap">
+						<i class="ft-navigation-2"></i> Export To Excel
+					</button>
+				<?php endif; ?>
+				</div>
+				
 			</div>
 			<hr>
 			<div class="card-body">
@@ -209,7 +217,7 @@
 					<input type="text" class="form-control" name="bagian" id="lihat_bagian_karyawan" placeholder="bagian" autocomplete="off" readonly>
 				</fieldset>
 				<fieldset class="form-group floating-label-form-group">
-					<label for="lihat_gaji_pokok">Gaji Perhari</label>
+					<label for="lihat_gaji_pokok">Gaji Borongan</label>
 					<input type="text" class="form-control" name="bagian" id="lihat_gaji_pokok" placeholder="Gaji pokok" autocomplete="off" readonly>
 				</fieldset>
 				<fieldset class="form-group floating-label-form-group">

@@ -7,7 +7,7 @@ class BagianController extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('bagianModel');
+		$this->load->model('BagianModel');
 		$this->load->helper('nominal');
 		if (!$this->session->has_userdata('session_id')) {
 			$this->session->set_flashdata('alert', 'belum_login');
@@ -30,7 +30,7 @@ class BagianController extends CI_Controller
 	{
 		if (isset($_POST['simpan'])) {
 			$generate = substr(time(), 5);
-			$id = 'JAB-' . $generate;
+			$id = 'BAG-' . $generate;
 			$bagian = $this->input->post('bagian');
 			$gaji = $this->input->post('gaji');
 			$data = array(

@@ -59,11 +59,11 @@ $route['karyawan/update'] = 'KaryawanController/update';
 $route['karyawan/hapus/(:any)'] = 'KaryawanController/hapus/$1';
 $route['karyawan/ajaxIndex'] = 'KaryawanController/ajaxIndex';
 
-$route['bagian'] = 'bagianController';
-$route['bagian/tambah'] = 'bagianController/tambah';
-$route['bagian/updateForm/(:any)'] = 'bagianController/updateForm/$1';
-$route['bagian/update'] = 'bagianController/update';
-$route['bagian/hapus/(:any)'] = 'bagianController/hapus/$1';
+$route['bagian'] = 'BagianController';
+$route['bagian/tambah'] = 'BagianController/tambah';
+$route['bagian/updateForm/(:any)'] = 'BagianController/updateForm/$1';
+$route['bagian/update'] = 'BagianController/update';
+$route['bagian/hapus/(:any)'] = 'BagianController/hapus/$1';
 
 $route['absen'] = 'AbsenController';
 $route['absen/tambah'] = 'AbsenController/tambah';

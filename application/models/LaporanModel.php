@@ -13,7 +13,7 @@ class LaporanModel extends CI_Model{
 		$this->db->select('*');
 		$this->db->from('sigaka_gaji');
 		$this->db->join('sigaka_karyawan', 'sigaka_karyawan.karyawan_id = sigaka_gaji.gaji_karyawan_id');
-		$this->db->join('sigaka_jabatan', 'sigaka_jabatan.jabatan_id = sigaka_karyawan.karyawan_jabatan_id');
+		$this->db->join('sigaka_bagian', 'sigaka_bagian.bagian_id = sigaka_karyawan.karyawan_bagian_id');
 		$this->db->like('gaji_tanggal',$tanggal);
 		$this->db->where('gaji_status','sudah');
 		$this->db->order_by('gaji_bulan_ke','DESC');
